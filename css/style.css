@@ -331,14 +331,13 @@ template {
   margin: auto; }
 
 .header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 99;
   background-color: #131313;
-  padding: 24px 0;
-  -webkit-animation-name: back;
-  animation-name: back;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
-  -webkit-animation-delay: 2s;
-  animation-delay: 2s; }
+  padding: 24px 0; }
 
 .menu {
   display: flex;
@@ -363,6 +362,7 @@ template {
 
 .hero {
   position: relative;
+  padding-top: 100px;
   background: #131313 url(../img/hero-bkg.jpg) no-repeat center/cover;
   height: 100vh;
   color: #fff; }
