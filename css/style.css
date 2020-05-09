@@ -317,14 +317,27 @@ template {
 [hidden] {
   display: none; }
 
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Futura Book', sans-serif;
+  font-size: 14px; }
+
 .button {
   padding: 13px 20px;
   border: none;
   border-radius: 2px;
   text-transform: uppercase; }
+  .button:hover {
+    cursor: pointer; }
   .button--primary {
     background-color: #E3B873;
-    color: #fff; }
+    color: #fff;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    transition: box-shadow 0.3s; }
+    .button--primary:hover {
+      box-shadow: none; }
   .button--outline {
     border: 1px solid #fff;
     background-color: transparent;
@@ -357,7 +370,10 @@ template {
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
-  margin-right: 40px; }
+  margin-right: 40px;
+  transition: color 0.2s; }
+  .nav__item:hover {
+    color: #E3B873; }
 
 .phone {
   color: #E3B873; }
@@ -375,7 +391,14 @@ template {
   background: #131313 url(../img/hero-bkg.jpg) no-repeat center/cover;
   height: 100vh;
   color: #fff; }
+  .hero::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(19, 19, 19, 0.7); }
   .hero__content {
+    position: relative;
     max-width: 670px; }
   .hero__text {
     font-size: 22px;
@@ -401,6 +424,14 @@ template {
     text-transform: uppercase;
     text-decoration: none;
     color: #fff; }
+    .hero__scroll-down::after {
+      content: '';
+      background: url("../img/arrow-down.svg") no-repeat center;
+      width: 29px;
+      height: 29px;
+      border: 1px solid #E3B873;
+      border-radius: 50%;
+      margin-left: 12px; }
 
 .instagram {
   display: flex;
@@ -408,10 +439,18 @@ template {
   align-items: center;
   background-color: #131313; }
   .instagram__link {
+    display: flex;
+    align-items: center;
     text-transform: uppercase;
     color: #E3B873;
     text-decoration: none;
     transform: rotate(90deg); }
+    .instagram__link::after {
+      content: '';
+      width: 50px;
+      height: 1px;
+      background-color: #E3B873;
+      margin-left: 8px; }
 
 .title {
   margin: 0;
@@ -420,10 +459,3 @@ template {
   font-size: 40px; }
   .title--primary {
     color: #E3B873; }
-
-*, *:before, *:after {
-  box-sizing: border-box; }
-
-body {
-  font-family: 'Futura Book', sans-serif;
-  font-size: 14px; }
