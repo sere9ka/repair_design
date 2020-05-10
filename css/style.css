@@ -384,8 +384,13 @@ body {
   align-items: center; }
 
 .logo {
+  display: block;
   color: #E3B873;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color 0.2s; }
+  .logo:hover {
+    color: #fff; }
 
 .nav__item {
   text-decoration: none;
@@ -427,8 +432,8 @@ body {
     max-width: 670px;
     margin-left: 60px; }
   .hero__text {
-    margin-top: 19px;
-    margin-bottom: 41px;
+    margin-top: 25px;
+    margin-bottom: 50px;
     font-size: 22px;
     max-width: 500px; }
   .hero__button {
@@ -455,9 +460,8 @@ body {
     text-decoration: none;
     color: #fff;
     box-shadow: none;
-    transition: box-shadow 0.3s; }
+    transition: color 0.3s; }
     .hero__scroll-down:hover {
-      box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
       color: #E3B873; }
     .hero__scroll-down::after {
       content: '';
@@ -481,9 +485,9 @@ body {
     text-decoration: none;
     transform: rotate(90deg);
     box-shadow: none;
-    transition: box-shadow 0.3s; }
+    transition: color 0.3s; }
     .instagram__link:hover {
-      box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2); }
+      color: #fff; }
     .instagram__link::after {
       content: '';
       width: 50px;
