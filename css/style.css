@@ -434,6 +434,7 @@ body {
   .hero__text {
     margin-top: 25px;
     margin-bottom: 50px;
+    line-height: 30px;
     font-size: 22px;
     max-width: 500px; }
   .hero__button {
@@ -499,6 +500,7 @@ body {
   margin: 0;
   font-family: 'Yeseva One', cursive;
   text-transform: uppercase;
+  line-height: 53px;
   font-size: 40px;
   font-weight: 400; }
   .title--primary {
