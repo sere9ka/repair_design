@@ -343,11 +343,11 @@ body {
       margin: 0 10px; }
 
 .button {
-  padding: 13px 20px;
+  padding: 0.84rem 1.6rem;
   border: none;
   border-radius: 2px;
   text-transform: uppercase;
-  font-size: 0.93rem; }
+  font-size: 0.97rem; }
   .button:hover {
     cursor: pointer; }
   .button--primary {
@@ -358,6 +358,7 @@ body {
     .button--primary:hover {
       box-shadow: none; }
   .button--outline {
+    padding: 17px 42px;
     border: 1px solid #fff;
     background-color: transparent;
     color: #fff;
@@ -392,6 +393,7 @@ body {
   color: #E3B873;
   text-transform: uppercase;
   text-decoration: none;
+  font-size: 1.075rem;
   transition: color 0.2s; }
   .logo:hover {
     color: #fff; }
@@ -400,7 +402,7 @@ body {
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
-  margin-right: 2.85rem;
+  margin-right: 2.65rem;
   transition: color 0.2s; }
   .nav__item:hover {
     color: #E3B873; }
@@ -409,7 +411,7 @@ body {
   color: #E3B873; }
 
 .contacts__phone {
-  margin-right: 45px; }
+  margin-right: 3.02rem; }
   .contacts__phone:hover {
     color: #fff; }
 
@@ -435,19 +437,25 @@ body {
     position: relative;
     max-width: 47.85rem;
     margin-left: 4.28rem; }
+  .hero__title {
+    margin-bottom: 1rem; }
   .hero__text {
-    margin-top: 25px;
-    margin-bottom: 50px;
+    margin-top: 1rem;
+    margin-bottom: 3.3rem;
     line-height: 30px;
     font-size: 1.57rem;
     max-width: 500px; }
   .hero__button {
-    margin-right: 20px; }
+    margin-right: 18px;
+    font-weight: 500;
+    font-size: 0.965rem; }
   .hero__instagram {
     position: absolute;
     left: 0;
     top: 0;
     max-width: 80px;
+    font-size: 1.06rem;
+    line-height: 0.8;
     height: 100%; }
   .hero__scroll-down {
     position: absolute;
@@ -459,7 +467,8 @@ body {
     min-width: 17.6rem;
     min-height: 6.92rem;
     font-family: 'Yeseva One', cursive;
-    font-size: 12px;
+    font-size: 0.857rem;
+    line-height: 138.6%;
     background-color: #131313;
     text-transform: uppercase;
     text-decoration: none;
@@ -475,7 +484,7 @@ body {
       height: 29px;
       border: 1px solid #E3B873;
       border-radius: 50%;
-      margin-left: 12px; }
+      margin-left: 1.2rem; }
 
 .instagram {
   display: flex;
@@ -504,8 +513,8 @@ body {
   margin: 0;
   font-family: 'Yeseva One', cursive;
   text-transform: uppercase;
-  line-height: 3.78rem;
-  font-size: 2.857rem;
+  line-height: 1.35;
+  font-size: 2.844rem;
   font-weight: 400; }
   .title--primary {
     color: #E3B873; }
