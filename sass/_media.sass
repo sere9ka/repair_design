@@ -1,4 +1,4 @@
-@media screen and ( max-width: 1200px )
+@media screen and ( max-width: 1300px )
   html
     font-size: 12px
   .nav
@@ -15,9 +15,13 @@
       margin-left: 0
   
 @media screen and ( max-width: 570px )
-  
+  .header
+    .container
+      width: 90%
+  .logo
+    margin-left: 0.15rem
   .phone
-    margin-right: 0
+    margin-right: 0.3rem
     color: $light
     text-decoration: none
   .contacts
@@ -25,20 +29,34 @@
       display: none
   .title
     font-size: 1.9rem
-    line-height: 132.83%
+    line-height: 133%
   .hero
     .container
       margin-top: 52px
+      max-width: 100%
+      display: flex
+      justify-content: center
     &__scroll-down
       display: none
-    &__content
-      max-width: 22.86rem
     &__text
+      text-align: justify
       width: 100%
-      font-size: 18px
-      line-height: 135.84%
-      margin-bottom: 2.28rem
-    &__button
+      font-size: 1.5rem
+      line-height: 135%
+      margin-top: 1.2rem
+      margin-bottom: 2.8rem
+    .button--primary
       display: block
       min-width: 22.86rem
-      margin-bottom: 1.85rem
+      margin-bottom: 2.1rem
+      margin-left: auto
+      margin-right: auto
+      padding: 1.5rem 7.7rem
+      font-size: 1.1rem
+    .button--outline
+      display: block
+      min-width: 22.86rem
+      margin-left: auto
+      margin-right: auto
+      padding: 1.45rem 9.5rem
+      font-size: 1.1rem

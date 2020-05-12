@@ -343,7 +343,7 @@ body {
       margin: 0 10px; }
 
 .button {
-  padding: 0.84rem 1.6rem;
+  padding: 1.3rem 1.75rem;
   border: none;
   border-radius: 2px;
   text-transform: uppercase;
@@ -358,7 +358,7 @@ body {
     .button--primary:hover {
       box-shadow: none; }
   .button--outline {
-    padding: 17px 42px;
+    padding: 1.21rem 3.07rem;
     border: 1px solid #fff;
     background-color: transparent;
     color: #fff;
@@ -415,6 +415,9 @@ body {
   .contacts__phone:hover {
     color: #fff; }
 
+.contacts__button {
+  padding: 0.75rem 1.6rem; }
+
 .hero {
   position: relative;
   display: flex;
@@ -441,8 +444,8 @@ body {
     margin-bottom: 1rem; }
   .hero__text {
     margin-top: 1rem;
-    margin-bottom: 3.3rem;
-    line-height: 30px;
+    margin-bottom: 3.4rem;
+    line-height: 2.14rem;
     font-size: 1.57rem;
     max-width: 35.71rem; }
   .hero__button {
@@ -519,7 +522,7 @@ body {
   .title--primary {
     color: #E3B873; }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
   html {
     font-size: 12px; }
   .nav__item {
@@ -534,27 +537,45 @@ body {
     margin-left: 0; } }
 
 @media screen and (max-width: 570px) {
+  .header .container {
+    width: 90%; }
+  .logo {
+    margin-left: 0.15rem; }
   .phone {
-    margin-right: 0;
+    margin-right: 0.3rem;
     color: #fff;
     text-decoration: none; }
   .contacts__button {
     display: none; }
   .title {
     font-size: 1.9rem;
-    line-height: 132.83%; }
+    line-height: 133%; }
   .hero .container {
-    margin-top: 52px; }
+    margin-top: 52px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center; }
   .hero__scroll-down {
     display: none; }
-  .hero__content {
-    max-width: 22.86rem; }
   .hero__text {
+    text-align: justify;
     width: 100%;
-    font-size: 18px;
-    line-height: 135.84%;
-    margin-bottom: 2.28rem; }
-  .hero__button {
+    font-size: 1.5rem;
+    line-height: 135%;
+    margin-top: 1.2rem;
+    margin-bottom: 2.8rem; }
+  .hero .button--primary {
     display: block;
     min-width: 22.86rem;
-    margin-bottom: 1.85rem; } }
+    margin-bottom: 2.1rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5rem 7.7rem;
+    font-size: 1.1rem; }
+  .hero .button--outline {
+    display: block;
+    min-width: 22.86rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.45rem 9.5rem;
+    font-size: 1.1rem; } }
