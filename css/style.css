@@ -336,14 +336,17 @@ img {
     text-align: center;
     text-transform: uppercase;
     font-family: 'Yeseva One', cursive; }
+    .section-title__heading {
+      font-weight: normal;
+      font-size: 1.428rem; }
     .section-title__image {
       display: flex;
       justify-content: center;
       align-items: center; }
       .section-title__image::after, .section-title__image::before {
         content: '';
-        width: 32px;
-        height: 2px;
+        width: 2.285rem;
+        height: 0.107rem;
         background-color: #E3B873;
         margin: 0 10px; }
 
@@ -456,7 +459,7 @@ img {
   .hero__button {
     margin-right: 18px;
     font-weight: 500;
-    font-size: 0.965rem; }
+    font-size: 0.928rem; }
   .hero__instagram {
     position: absolute;
     left: 0;
@@ -515,7 +518,7 @@ img {
       width: 50px;
       height: 1px;
       background-color: #E3B873;
-      margin-left: 8px\;; }
+      margin-left: 8px; }
 
 .title {
   margin: 0;
@@ -551,21 +554,23 @@ img {
   margin-top: 0;
   margin-bottom: 0.6rem;
   font-family: 'Yeseva One', cursive;
-  font-size: 1.29rem; }
+  font-size: 1.285rem;
+  font-weight: normal; }
 
 .card__list {
   padding: 0 0 0 1rem;
   margin: 0;
-  margin-bottom: 2.5rem;
-  font-size: 1.07rem;
-  line-height: 1.79rem;
+  font-weight: normal;
+  font-size: 1.071rem;
+  line-height: 1.785rem;
   color: #959595; }
 
 .card__pricetag {
   position: absolute;
   left: 0;
   bottom: -1.79rem;
-  font-size: 1.29rem;
+  font-weight: normal;
+  font-size: 1.285rem;
   font-family: 'Yeseva One', cursive;
   text-transform: uppercase;
   background-color: #E3B873;
@@ -590,7 +595,7 @@ img {
   .row {
     flex-direction: column;
     align-items: center; }
-  .types__card {
+  .col:not(:last-child) {
     margin-bottom: 6rem; }
   .card__text {
     margin-left: 0; } }
@@ -607,11 +612,6 @@ img {
   .title {
     font-size: 1.9rem;
     line-height: 133%; }
-  .hero .container {
-    margin-top: 4.33rem;
-    max-width: 100%;
-    display: flex;
-    justify-content: center; }
   .hero__scroll-down {
     display: none; }
   .hero__text {
@@ -619,20 +619,19 @@ img {
     width: 100%;
     font-size: 1.5rem;
     line-height: 135%;
-    margin-top: 1.2rem;
-    margin-bottom: 2.8rem; }
+    margin-top: 1.2rem; }
+    .hero__text ::not-last-child {
+      margin-bottom: 2.8rem; }
   .hero .button--primary {
     display: block;
     min-width: 22.86rem;
     margin-bottom: 2.1rem;
     margin-left: auto;
     margin-right: auto;
-    padding: 1.5rem 7.7rem;
     font-size: 1.1rem; }
   .hero .button--outline {
     display: block;
     min-width: 22.86rem;
     margin-left: auto;
     margin-right: auto;
-    padding: 1.45rem 9.5rem;
     font-size: 1.1rem; } }

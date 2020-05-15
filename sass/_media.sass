@@ -18,9 +18,10 @@
   .row
     flex-direction: column
     align-items: center
-  .types
-    &__card
+  .col:not(:last-child)
       margin-bottom: 6rem
+        
+      
   .card
     &__text
       margin-left: 0
@@ -41,11 +42,6 @@
     font-size: 1.9rem
     line-height: 133%
   .hero
-    .container
-      margin-top: 4.33rem
-      max-width: 100%
-      display: flex
-      justify-content: center
     &__scroll-down
       display: none
     &__text
@@ -54,19 +50,18 @@
       font-size: 1.5rem
       line-height: 135%
       margin-top: 1.2rem
-      margin-bottom: 2.8rem
+      ::not-last-child
+        margin-bottom: 2.8rem
     .button--primary
       display: block
       min-width: 22.86rem
       margin-bottom: 2.1rem
       margin-left: auto
       margin-right: auto
-      padding: 1.5rem 7.7rem
       font-size: 1.1rem
     .button--outline
       display: block
       min-width: 22.86rem
       margin-left: auto
       margin-right: auto
-      padding: 1.45rem 9.5rem
       font-size: 1.1rem
