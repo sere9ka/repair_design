@@ -695,6 +695,17 @@ img {
   .modal__button {
     align-self: flex-end; }
 
+.section-video {
+  min-height: 100vh;
+  text-align: center;
+  width: 100%;
+  display: table; }
+
+.wrap-block {
+  display: table-cell;
+  vertical-align: middle;
+  color: #fff; }
+
 @media screen and (max-width: 1300px) {
   html {
     font-size: 12px; }
