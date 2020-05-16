@@ -601,8 +601,8 @@ img {
   margin: 0 auto;
   margin-top: -9.3rem;
   padding: 1.79rem 2.14rem 3.92rem 2.14rem;
-  background: #FFFFFF;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.13); }
+  background: #fff;
+  box-shadow: 10px 10px 20px rgba(19, 19, 19, 0.13); }
 
 .card__title {
   margin-top: 0;
@@ -754,4 +754,14 @@ img {
     margin-right: auto;
     font-size: 1.1rem; }
   .title__description {
-    width: 90%; } }
+    width: 90%; }
+  .control {
+    background: #252525;
+    padding-top: 4.226rem;
+    padding-bottom: 7.369rem;
+    margin: 0; }
+  .project {
+    background: #252525;
+    padding-top: 14.416rem; }
+    .project__section-title {
+      color: #fff; } }
