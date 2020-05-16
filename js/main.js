@@ -19,8 +19,8 @@ $(document).ready(function () {
         }
         });
 
-      modal.keypress(function (eventObject) { 
-        if ( eventObject.which == 27 && modal === 'modal modal--visible') {
+      $(document).keydown(function(eventObject) {
+        if( eventObject.which == 27 ){ 
           modal.toggleClass('modal--visible');
         }
       });
@@ -40,4 +40,3 @@ $(document).ready(function () {
 
 
 });
-
