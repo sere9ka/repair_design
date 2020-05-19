@@ -2,15 +2,20 @@
   margin: 0 auto
   padding-top: 9.14rem
   padding-bottom: 6.687rem
+  &-slider__img
+    object-fit: cover
 
 .swiper
+  &-container
+    margin-top: 0
   &-slide
     display: flex
     flex-wrap: wrap
-    &--width
-      width: 80vh
+    justify-content: flex-start
+    &__value
+      max-width: 11.5rem
     &__text
-      flex-basis: 50%
+      flex-basis: 35%
       margin-bottom: 3.45rem
     &__heading
       font-family: 'Yeseva One', cursive

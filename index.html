@@ -45,8 +45,10 @@
         <div class="hero__content">
           <h1 class="title hero-title">Турецкий ремонт в&nbsp;<span class="title--primary">Ростове-на-дону</span></h1>
           <p class="hero__text">Получите готовый ремонт под ключ в срок с экономией рабочего времени до 45 дней и 20% от стоимости материалов за счет организации работы</p>
-          <button class="button hero__button button--primary" data-toggle="modal">Рассчитать&nbsp;стоимоcть</button>
-          <button class="button hero__button button--outline" data-toggle="modal">Отправить&nbsp;заявку</button>
+          <div class="buttons hero__buttons">
+            <button class="button hero__button hero__button--primary button--primary" data-toggle="modal">Рассчитать&nbsp;стоимоcть</button>
+            <button class="button hero__button hero__button--outline button--outline" data-toggle="modal">Отправить&nbsp;заявку</button>
+          </div>
         </div>
         <!-- /.hero__content -->
       </div>
@@ -57,7 +59,7 @@
     <section class="section section--dark projects">
       <div class="container">
         <div class="row">
-          <div class="col-50">
+          <div class="col-40">
             <div class="section-title section-title--left">
               <h2 class="section-title__heading section-title__heading--primary">Завершенные <span class="section-title__word">проекты</span></h2>
               <!-- /.section-title__heading -->
@@ -138,15 +140,15 @@
             <!-- /.slider -->
           </div>
           <!-- /.col-50 -->
-          <div class="col-50">
+          <div class="col-60">
             <!-- Slider main container -->
             <div class="swiper-container swiper-no-swiping">
               <!-- Additional required wrapper -->
               <div class="swiper-wrapper">
                   <!-- Slides -->
-                  <div class="swiper-slide"><img src="img/projects/project.jpg" alt="фотография ремонта"></div>
-                  <div class="swiper-slide"><img src="img/projects/project.jpg" alt="фотография ремонта"></div>
-                  <div class="swiper-slide"><img src="img/projects/project.jpg" alt="фотография ремонта"></div>
+                  <div class="swiper-slide"><img class="project-slider__img" src="img/projects/project.jpg" alt="фотография ремонта"></div>
+                  <div class="swiper-slide"><img class="project-slider__img" src="img/projects/project.jpg" alt="фотография ремонта"></div>
+                  <div class="swiper-slide"><img class="project-slider__img" src="img/projects/project.jpg" alt="фотография ремонта"></div>
               </div>
             </div>
           </div>
@@ -290,8 +292,8 @@
     <!-- /.section types -->
     <section class="section design-project">
       <div class="container">
-        <div class="section-title project__section-title">
-          <h2 class="section-title__heading">Дизайн-проект</h2>
+        <div class="section-title design-project__section-title">
+          <h2 class="section-title__heading design-project__section-title__heading">Дизайн-проект</h2>
           <!-- /.section-title__heading -->
           <div class="section-title__image">
             <img src="img/design.svg" alt="design">
