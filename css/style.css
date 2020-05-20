@@ -637,7 +637,8 @@ img {
   .modal__policy {
     margin-bottom: 2.7rem; }
   .modal__button {
-    align-self: flex-end; }
+    align-self: flex-end;
+    padding: 19px 42px; }
 
 .section-video {
   min-height: 100vh;
@@ -696,17 +697,19 @@ img {
     display: none; }
 
 .swiper-button-next {
-  background: url("../img/projects/arrow-next.svg") no-repeat center; }
+  background: url("../img/projects/arrow-next.svg") no-repeat center;
+  outline: none; }
 
 .swiper-button-prev {
   left: 0;
-  background: url("../img/projects/arrow-prew.svg") no-repeat center; }
+  background: url("../img/projects/arrow-prew.svg") no-repeat center;
+  outline: none; }
 
 .swiper-container-horizontal > .swiper-pagination-bullets {
   width: auto;
   bottom: 0.48rem; }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1230px) {
   html {
     font-size: 12px; }
   .nav__item {
@@ -793,6 +796,9 @@ img {
       margin-bottom: 2.28rem; }
     .hero > .hero__scroll-down {
       display: none; }
+  .button__up {
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem; }
   .section-title__heading {
     font-size: 1.58rem;
     margin-bottom: 1.22rem; }
@@ -807,8 +813,7 @@ img {
   .title__description {
     margin: 1rem auto 2.5rem;
     font-size: 1rem;
-    line-height: 150%;
-    width: 75%; }
+    line-height: 150%; }
   .design-project {
     background: #131313;
     padding-top: 3.714rem; }
