@@ -4,6 +4,10 @@
   .nav
     &__item
       margin-right: 1rem
+  .swiper
+    &-slide
+      &__text
+        flex-basis: 50%
 
 @media screen and ( max-width: 992px )
   .nav
@@ -14,7 +18,20 @@
 
   .hero > .instagram
     display: none
-  
+  .col-50
+    width: 100%
+    &:first-child
+      margin-bottom: 2.5rem
+  .projects
+    &__row
+      flex-direction: column
+      align-items: flex-start
+      justify-content: space-between
+  .swiper
+    &-slide
+      &__text
+        flex-basis: 40%
+
 @media screen and ( max-width: 760px )
   .row
     margin: auto
@@ -54,7 +71,7 @@
     font-size: 14px
 
   .logo
-    font-size: 0.92rem
+    font-size: 0.9rem
   .container
     max-width: 95%
     margin: auto
@@ -63,7 +80,7 @@
       margin-right: 0
       color: $light
       text-decoration: none
-      font-size: 0.92rem
+      font-size: 0.9rem
     &__button
       display: none
   .title
@@ -71,6 +88,8 @@
     font-size: 1.64rem
   .hero
     padding-top: 0
+    &::after
+      display: none
     &__buttons
       display: flex
       flex-direction: column
@@ -93,17 +112,19 @@
       font-size: 1.58rem
       margin-bottom: 1.22rem
   \\адаптив для секции types
-
+  .types
+    padding-top: 5.92rem
 
   
 
 
   
   .control
-    background: lighten($dark, 7.06)
-    padding-top: 4.226rem
+    background: $dark
+    padding-top: 3.642rem
     padding-bottom: 7.369rem
     margin: 0
+    color: $light
 
   \\описание адаптива для секции design-project
   .title
@@ -113,11 +134,29 @@
       line-height: 150%
       width: 75%
   .design-project
-    background: lighten($dark, 7.06)
-    padding-top: 14.416rem
+    background: $dark
+    padding-top: 3.714rem
     &__section-title
       color: $light
-      
+  
+  \\описание адаптива секции со слайдером(project)
+  .projects
+    padding-top: 2.571rem
+    padding-bottom: 0
+  .section
+    &-title
+      &__word
+        &::after
+          display: none
+      &__text
+        font-size: 14px
+        line-height: 158%
+  .swiper
+    &-slide
+      &__text
+        flex-basis: 50%
+      &__heading
+        font-size: 1rem
     
 
 @media screen and ( max-height: 520px )
