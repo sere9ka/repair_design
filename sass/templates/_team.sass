@@ -1,0 +1,80 @@
+.team
+  padding-top: 0
+  padding-bottom: 25.28rem
+  &__text
+    max-width: 40.785rem
+    margin: auto
+    margin-bottom: 4.285rem
+    text-align: center
+    font-size: 1.43rem
+    line-height: 2.46rem
+    &::before
+      content: ''
+      display: block
+      margin: auto
+      margin-top: 3.785rem
+      margin-bottom: 1.214rem
+      width: 55px
+      height: 2px
+      background-color: $primary
+      border-radius: 30px
+  &__title__description
+    max-width: 32rem
+    margin-bottom: 5.285rem
+  &__card
+    position: relative
+    display: flex
+    flex-direction: column
+    margin: auto
+    max-width: 19.42rem
+    &-img1
+      &::before
+        content: ''
+        background: $primary url('../img/team/team_img-1.svg') no-repeat center / cover
+        position: absolute 
+        top: -35px
+        left: -35px
+        width: 70px
+        height: 70px
+        box-shadow: 0px 5px 20px rgba($primary, 0.5)
+    &-img2
+      &::before
+        content: ''
+        background: $primary url('../img/team/team_img-2.svg') no-repeat center / cover
+        position: absolute 
+        top: -35px
+        left: -35px
+        width: 70px
+        height: 70px
+        box-shadow: 0px 5px 20px rgba($primary, 0.5)
+    &-img3
+      &::before
+        content: ''
+        background: $primary url('../img/team/team_img-3.svg') no-repeat center / cover
+        position: absolute 
+        top: -35px
+        left: -35px
+        width: 70px
+        height: 70px
+        box-shadow: 0px 5px 20px rgba($primary, 0.5)
+    &__text
+      max-width: 16.64rem
+      width: 16.64rem
+      margin-top: -5rem
+      padding: 0
+      text-align: center
+    &__title
+      margin-top: 22px
+    &__tag
+      display: block
+      font-style: normal
+      font-weight: normal
+      font-size: 13px
+      width: 100%
+      text-transform: uppercase
+      background-color: $primary
+      color: $light
+      margin-top: 1.8rem
+      padding: 0.9rem 0
+    &__desc
+      color: $secondary
