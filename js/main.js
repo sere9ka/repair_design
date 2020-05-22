@@ -61,7 +61,7 @@ $(document).ready(function () {
     //включаем wow.js
     new WOW().init();
 
-    //Валидация форм
+    //Валидация формы модального окна
     $(".modal__form").validate({
       errorElement: "div",
       errorClass: "invalid",
@@ -93,7 +93,61 @@ $(document).ready(function () {
         }
       }
     });
-
+    //Валидация формы control-section
+    $(".control__form").validate({
+      errorElement: "div",
+      errorClass: "invalid",
+      rules: {
+        // правило-объект
+        userName: {
+          required: true,
+          minlength: 2,
+          maxlength: 15
+        },
+        // строчное правило
+        userPhone: "required",
+      }, //собщения
+      messages: {
+        userName: {
+          required: "Заполните поле",
+          minlength: "Имя не короче двух букв",
+          maxlength: "Имя не длиннее 15 букв"
+        },
+        userPhone: "Заполните поле"
+      }
+    });
+    //Валидация формы подвала окна
+    $(".footer__form").validate({
+      errorElement: "div",
+      errorClass: "invalid",
+      rules: {
+        // правило-объект
+        userName: {
+          required: true,
+          minlength: 2,
+          maxlength: 15
+        },
+        // строчное правило
+        userPhone: "required",
+        // правило-объект
+        userQuestion: {
+          required: true,
+          minlength: 10
+        }
+      }, //собщения
+      messages: {
+        userName: {
+          required: "Заполните поле",
+          minlength: "Имя не короче двух букв",
+          maxlength: "Имя не длиннее 15 букв"
+        },
+        userPhone: "Заполните поле",
+        userQuestion: {
+          required: "Заполните поле",
+          minlength: "Сообщение не менее 10 символов"
+        }
+      }
+    });
     //маска для телефона
     $('[type=tel]').mask('+7(000)000-00-00', {placeholder: "+7(___)___-__-__"});
 
