@@ -286,7 +286,7 @@ img {
     position: fixed;
     display: inline-block;
     bottom: 4.142rem;
-    right: 2.142rem;
+    right: 0.3rem;
     font-weight: normal;
     opacity: 0;
     visibility: hidden; }
@@ -817,8 +817,7 @@ input.invalid {
 
 .footer {
   background: #131313 url("../img/footer-bkgi.jpg") no-repeat center/cover;
-  padding-top: 15.89rem;
-  padding-bottom: 0; }
+  padding-top: 15.89rem; }
   .footer__wrap {
     background-color: #181818;
     max-width: 63.07rem;
@@ -861,6 +860,39 @@ input.invalid {
   .footer__menu {
     background-color: #131313;
     padding: 4.285rem 0; }
+  .footer__contact {
+    margin-bottom: 4.642rem;
+    min-height: 45.7rem; }
+    .footer__contact-title {
+      max-width: 42.07rem;
+      margin: auto;
+      margin-bottom: 1.8rem;
+      color: #E3B873;
+      font-family: Yeseva One;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 28px;
+      text-align: center;
+      text-transform: uppercase; }
+    .footer__contact__links {
+      margin: auto;
+      margin-bottom: 3.07rem;
+      display: flex;
+      justify-content: center; }
+    .footer__contact__link {
+      display: block;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%; }
+      .footer__contact__link-mail {
+        background: #E3B873 url("../img/mail.svg") no-repeat center;
+        margin-right: 1.075rem; }
+      .footer__contact__link-instagram {
+        background: #E3B873 url("../img/instagram2.svg") no-repeat center; }
+  .footer__map {
+    width: 100%;
+    min-height: 33.214rem; }
 
 .modal {
   opacity: 0;
@@ -1121,7 +1153,8 @@ input.invalid {
       background: #131313;
       max-width: 100%;
       margin-top: 0;
-      padding-left: 0.8rem; }
+      padding-left: 0.8rem;
+      padding-bottom: 3.285rem; }
     .footer__input {
       font-size: 1.285rem; }
       .footer__input:placeholder {
@@ -1135,7 +1168,23 @@ input.invalid {
     .footer__form {
       flex-direction: column; }
     .footer__button {
-      padding: 1.285rem 9.5rem; }
+      width: 100%;
+      margin: auto;
+      padding: 1.285rem 0; }
+    .footer__contact {
+      display: flex;
+      flex-direction: column; }
+      .footer__contact-title {
+        margin: 0 17px; }
+      .footer__contact__link {
+        width: 39px;
+        height: 39px; }
+    .footer__map {
+      margin-bottom: 2.93rem; }
+    .footer__menu {
+      display: none; }
+  .contact-title {
+    order: 2; }
   .policy__label--center {
     justify-content: start; } }
 

@@ -247,6 +247,7 @@
       max-width: 100%
       margin-top: 0
       padding-left: 0.8rem
+      padding-bottom: 3.285rem
     &__input
       font-size: 1.285rem
       &:placeholder
@@ -260,7 +261,24 @@
     &__form
       flex-direction: column  
     &__button
-      padding: 1.285rem 9.5rem
+      width: 100%
+      margin: auto
+      padding: 1.285rem 0
+    &__contact
+      display: flex
+      flex-direction: column
+      &-title
+        margin: 0 17px 
+      &__link
+        width: 39px
+        height: 39px
+    &__map
+      margin-bottom: 2.93rem
+    &__menu
+      display: none
+  .contact
+    &-title
+      order: 2
   .policy
     &__label
       margin-bottom: 
@@ -271,4 +289,7 @@
 @media screen and ( max-height: 520px )
   .hero
     &__scroll-down
+      display: none
+  .button
+    &__up
       display: none
