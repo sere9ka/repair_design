@@ -657,7 +657,7 @@ input.invalid {
 
 .design-project {
   padding-top: 0;
-  padding-bottom: 30rem; }
+  padding-bottom: 25.28rem; }
 
 .title__description {
   max-width: 53rem;
@@ -741,12 +741,13 @@ input.invalid {
 
 .footer {
   background: #131313 url("../img/footer-bkgi.jpg") no-repeat center/cover;
-  padding-top: 0; }
+  padding-top: 15.89rem;
+  padding-bottom: 0; }
   .footer__wrap {
     background-color: #181818;
     max-width: 63.07rem;
     margin: auto;
-    margin-top: -20rem;
+    margin-top: -31.78rem;
     margin-bottom: 3.714rem;
     padding: 2.5rem;
     padding-top: 3rem; }
