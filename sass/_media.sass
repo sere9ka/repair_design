@@ -62,7 +62,13 @@
       font-size: 1.075rem
       padding: 0.8rem 2.3rem
       bottom: -1.5rem
-
+  .team
+    &__card
+      &__text
+        padding-bottom: 0
+        margin-top: -6rem
+        margin-left: auto
+        margin-right: auto
       
 
 
@@ -92,9 +98,13 @@
     width: 18rem
     font-size: 1.64rem
 
+  .button
+    &__up
+      bottom: 6rem 
+
   \\адаптация секции hero
   .hero
-    padding-top: 0
+    padding-top: 85px
     &::after
       display: none
     &__buttons
@@ -205,7 +215,26 @@
 
   \\\\описание адаптива для секции team
   .team
+    background: $dark
+    padding-top: 6.857rem
+    padding-bottom: 0
+    color: $light
+    &__card
+      &__text
+        color: $dark
+        padding-top: 0
+      &__title
+        margin-top: 1.571rem
+        margin-bottom: 0.642rem
+        font-size: 1.285rem
+      &__desc
+        font-size: 1.285rem
+      &__tag
+        margin-top: 1.714rem
+    &__text
+      display: none
     
+        
 
   \\адаптация footer
   .footer
@@ -214,17 +243,22 @@
     &__title
       margin-bottom: 3.9rem
     &__wrap
+      background: $dark
       max-width: 100%
       margin-top: 0
       padding-left: 0.8rem
     &__input
+      font-size: 1.285rem
+      &:placeholder
+        font-size: 1.285rem
       &-group
         margin-bottom: 4.3rem
         &--full-width
           margin-bottom: 0.6rem
     &__policy
       margin-bottom: 4.8rem
-      
+    &__form
+      flex-direction: column  
     &__button
       padding: 1.285rem 9.5rem
   .policy
