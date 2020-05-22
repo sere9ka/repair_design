@@ -1,5 +1,5 @@
 .button
-  padding: 11px 22px
+  padding: 0.785rem 1.571rem
   border: none
   border-radius: 2px
   text-transform: uppercase
@@ -9,11 +9,9 @@
   &__up
     position: fixed
     display: inline-block
-    bottom: 2.142rem
+    bottom: 4.142rem
     right: 2.142rem
-    font-family: 'Yeseva One', cursive
     font-weight: normal
-    font-size: 1.285rem
     opacity: 0
     visibility: hidden
   &__show
@@ -80,3 +78,10 @@
       margin-right: 0.64rem
     &--center
       justify-content: center
+
+div
+  &.invalid
+    color: tomato
+input
+  &.invalid
+    border-bottom: 1px solid tomato

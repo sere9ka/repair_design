@@ -276,7 +276,7 @@ img {
         margin: 0 10px; }
 
 .button {
-  padding: 11px 22px;
+  padding: 0.785rem 1.571rem;
   border: none;
   border-radius: 2px;
   text-transform: uppercase;
@@ -287,11 +287,9 @@ img {
   .button__up {
     position: fixed;
     display: inline-block;
-    bottom: 2.142rem;
+    bottom: 4.142rem;
     right: 2.142rem;
-    font-family: 'Yeseva One', cursive;
     font-weight: normal;
-    font-size: 1.285rem;
     opacity: 0;
     visibility: hidden; }
   .button__show {
@@ -358,6 +356,12 @@ img {
     margin-right: 0.64rem; }
   .policy__label--center {
     justify-content: center; }
+
+div.invalid {
+  color: tomato; }
+
+input.invalid {
+  border-bottom: 1px solid tomato; }
 
 .container {
   width: 85%;
@@ -824,10 +828,12 @@ img {
   .modal__form {
     display: flex;
     flex-direction: column; }
-  .modal__input {
+  .modal__input-group {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 3.428rem; }
-    .modal__input:last-of-type {
-      margin-bottom: 1rem; }
+  .modal__input:last-of-type {
+    margin-bottom: 1rem; }
   .modal__policy {
     margin-bottom: 2.7rem; }
   .modal__button {

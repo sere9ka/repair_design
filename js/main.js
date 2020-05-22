@@ -49,7 +49,8 @@ $(document).ready(function () {
           prevEl: '.swiper-button-prev',
         },
     });
-
+    // настройка работы стрелок
+    
     var next = $('.swiper-button-next');
     var prev = $('.swiper-button-prev');
     var bullets = $('.swiper-pagination');
@@ -57,5 +58,43 @@ $(document).ready(function () {
     next.css('left', prev.width() + 10 + bullets.width() + 10),
     bullets.css('left', prev.width() + 10)
 
+    //включаем wow.js
     new WOW().init();
+
+    //Валидация форм
+    $(".modal__form").validate({
+      errorElement: "div",
+      errorClass: "invalid",
+      rules: {
+        // правило-объект
+        userName: {
+          required: true,
+          minlength: 2,
+          maxlength: 15
+        },
+        // строчное правило
+        userPhone: "required",
+        // правило-объект
+        userEmail: {
+          required: true,
+          email: true
+        }
+      }, //собщения
+      messages: {
+        userName: {
+          required: "Заполните поле",
+          minlength: "Имя не короче двух букв",
+          maxlength: "Имя не длиннее 15 букв"
+        },
+        userPhone: "Заполните поле",
+        userEmail: {
+          required: "Заполните поле",
+          email: "Введите корректный Email"
+        }
+      }
+    });
+
+    //маска для телефона
+    $('[type=tel]').mask('+7(000)000-00-00', {placeholder: "+7(___)___-__-__"});
+
 });
