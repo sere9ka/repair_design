@@ -322,17 +322,33 @@ img {
   border-bottom: 1px solid rgba(54, 54, 54, 0.5);
   font-size: 1.085rem;
   color: #fff;
-  padding: 0.5rem 0; }
+  padding: 0.5rem 0;
+  outline: none; }
   .input--light::-webkit-input-placeholder {
-    color: #fff; }
+    color: #fff;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.285rem; }
   .input--light::-moz-placeholder {
-    color: #fff; }
+    color: #fff;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.285rem; }
   .input--light:-ms-input-placeholder {
-    color: #fff; }
+    color: #fff;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.285rem; }
   .input--light::-ms-input-placeholder {
-    color: #fff; }
+    color: #fff;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.285rem; }
   .input--light::placeholder {
-    color: #fff; }
+    color: #fff;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.285rem; }
 
 .policy__checkbox {
   opacity: 0;
@@ -711,17 +727,6 @@ input.invalid {
   width: auto;
   bottom: 0.48rem; }
 
-.section-video {
-  min-height: 100vh;
-  text-align: center;
-  width: 100%;
-  display: table; }
-
-.wrap-block {
-  display: table-cell;
-  vertical-align: middle;
-  color: #fff; }
-
 .design-project {
   padding-top: 153px;
   padding-bottom: 10.28rem; }
@@ -813,13 +818,14 @@ input.invalid {
       margin-top: 1.8rem;
       padding: 0.9rem 0; }
     .team__card__desc {
-      color: #959595; }
+      color: #959595;
+      font-size: 1.285rem; }
 
 .footer {
   background: #131313 url("../img/footer-bkgi.jpg") no-repeat center/cover;
   padding-top: 15.89rem; }
   .footer__wrap {
-    background-color: #181818;
+    background: #181818 url("../img/bg-lines.svg") no-repeat center/cover;
     max-width: 63.07rem;
     margin: auto;
     margin-top: -31.78rem;
@@ -915,7 +921,7 @@ input.invalid {
   .modal__dialog {
     position: relative;
     max-width: 36.36rem;
-    background: #131313 url("../img/bg-lines.svg") no-repeat center;
+    background: #131313 url("../img/bg-lines.svg") no-repeat center/cover;
     padding: 2.357rem 3.5rem 1.928rem;
     color: #fff; }
   .modal__close {
@@ -941,8 +947,8 @@ input.invalid {
     display: flex;
     flex-direction: column;
     margin-bottom: 3.428rem; }
-  .modal__input:last-of-type {
-    margin-bottom: 1rem; }
+    .modal__input-group:nth-of-type(3) {
+      margin-bottom: 1rem; }
   .modal__policy {
     margin-bottom: 2.7rem; }
   .modal__button {
