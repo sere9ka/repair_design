@@ -152,6 +152,21 @@ $(document).ready(function () {
           required: "Заполните поле",
           minlength: "Сообщение не менее 10 символов"
         }
+      },
+      submitHandler: function(form) {
+        $.ajax({
+          type: "POST",
+          url: "send.php",
+          data: $(form).serialize(),
+          success: function (response) {
+            console.log('Ajax сработал. Ответ сервера: ' + response);
+            $(form)[0].reset();
+            modal.removeClass('modal--visible');
+          },
+          error: function (response) {
+            console.error('Ошибка запроса ' + response);
+          }
+        });
       }
     });
     //маска для телефона
@@ -196,7 +211,7 @@ $(document).ready(function () {
               // Необходимо указать данный тип макета.
               iconLayout: 'default#imageWithContent',
               // Своё изображение иконки метки.
-              iconImageHref: 'images/ball.png',
+              iconImageHref: 'img/map-marker.png',
               // Размеры метки.
               iconImageSize: [48, 48],
               // Смещение левого верхнего угла иконки относительно
