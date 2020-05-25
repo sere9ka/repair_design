@@ -339,28 +339,28 @@ img {
   .input--light::-webkit-input-placeholder {
     color: #fff;
     font-style: normal;
-    font-weight: 500;
-    font-size: 1.285rem; }
+    font-weight: normal;
+    font-size: 1.085rem; }
   .input--light::-moz-placeholder {
     color: #fff;
     font-style: normal;
-    font-weight: 500;
-    font-size: 1.285rem; }
+    font-weight: normal;
+    font-size: 1.085rem; }
   .input--light:-ms-input-placeholder {
     color: #fff;
     font-style: normal;
-    font-weight: 500;
-    font-size: 1.285rem; }
+    font-weight: normal;
+    font-size: 1.085rem; }
   .input--light::-ms-input-placeholder {
     color: #fff;
     font-style: normal;
-    font-weight: 500;
-    font-size: 1.285rem; }
+    font-weight: normal;
+    font-size: 1.085rem; }
   .input--light::placeholder {
     color: #fff;
     font-style: normal;
-    font-weight: 500;
-    font-size: 1.285rem; }
+    font-weight: normal;
+    font-size: 1.085rem; }
 
 .policy__checkbox {
   opacity: 0;
@@ -762,7 +762,6 @@ input.invalid {
   .team__text {
     max-width: 40.785rem;
     margin: auto;
-    margin-bottom: 4.285rem;
     text-align: center;
     font-size: 1.43rem;
     line-height: 2.46rem; }
@@ -771,7 +770,7 @@ input.invalid {
       display: block;
       margin: auto;
       margin-top: 3.785rem;
-      margin-bottom: 1.214rem;
+      margin-bottom: 0.8rem;
       width: 55px;
       height: 2px;
       background-color: #E3B873;
@@ -881,8 +880,7 @@ input.invalid {
     background-color: #131313;
     padding: 4.285rem 0; }
   .footer__contact {
-    margin-bottom: 4.642rem;
-    min-height: 45.7rem; }
+    margin-bottom: 4.642rem; }
     .footer__contact-title {
       max-width: 42.07rem;
       margin: auto;
@@ -912,6 +910,8 @@ input.invalid {
         background: #E3B873 url("../img/instagram2.svg") no-repeat center; }
   .footer__map {
     width: 100%;
+    margin: auto;
+    max-width: 66.07rem;
     min-height: 33.214rem; }
 
 .modal {
@@ -1240,7 +1240,8 @@ input.invalid {
       background: #131313;
       max-width: 100%;
       margin-top: 0;
-      padding-left: 0.8rem;
+      margin-bottom: 0;
+      padding: 0;
       padding-bottom: 3.285rem; }
     .footer__input {
       font-size: 1.285rem; }
@@ -1260,13 +1261,19 @@ input.invalid {
       padding: 1.285rem 0; }
     .footer__contact {
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      margin-bottom: 0; }
       .footer__contact-title {
-        margin: 0 17px; }
+        margin: 0 17px;
+        margin-bottom: 1.685rem;
+        font-size: 1.285rem; }
       .footer__contact__link {
         width: 39px;
         height: 39px; }
     .footer__map {
+      min-height: 18.214rem;
+      height: 55px;
+      margin: auto;
       margin-bottom: 2.93rem; }
     .footer__menu {
       display: none; }
