@@ -1000,6 +1000,23 @@ input.invalid {
   padding: 2.357rem 3.5rem 1.928rem;
   color: #fff; }
 
+.response__title {
+  font-family: 'Yeseva One', cursive;
+  font-size: 1.357rem;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 2.428rem; }
+
+.response__text {
+  font-family: 'Yeseva One', cursive;
+  font-weight: normal;
+  font-size: 1.075rem;
+  text-align: center;
+  margin: 0; }
+
+.response__button {
+  text-decoration: none; }
+
 @media screen and (max-width: 1230px) {
   html {
     font-size: 12px; }
