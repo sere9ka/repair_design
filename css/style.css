@@ -273,6 +273,12 @@ img {
       background-color: #E3B873;
       margin: 0 10px; }
 
+.input-group {
+  position: relative; }
+
+.policy {
+  position: relative; }
+
 .button {
   padding: 0.785rem 1.571rem;
   border: none;
@@ -372,7 +378,9 @@ img {
     justify-content: center; }
 
 div.invalid {
-  color: tomato; }
+  color: tomato;
+  position: absolute;
+  bottom: -1.3rem; }
 
 input.invalid {
   border-bottom: 1px solid tomato; }
@@ -1170,6 +1178,11 @@ input.invalid {
       bottom: -2rem; }
   .modal__button {
     padding: 1rem 2rem; }
+  .response__button {
+    display: block;
+    margin: auto;
+    margin-top: 2rem;
+    max-width: 50%; }
   .types {
     padding-top: 5.92rem; }
   .title__description {
