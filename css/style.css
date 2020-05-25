@@ -955,6 +955,51 @@ input.invalid {
     align-self: flex-end;
     padding: 1.357rem 3rem; }
 
+.response__modal {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  z-index: 199;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(19, 19, 19, 0.6);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .response__modal--visible {
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(19, 19, 19, 0.6);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+
+.response__close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 28px;
+  height: 28px;
+  background: transparent url("../img/close.svg") no-repeat center;
+  border: none;
+  margin: 0.857rem;
+  cursor: pointer; }
+
+.response__window {
+  position: relative;
+  max-width: 36.36rem;
+  background: #131313 url("../img/bg-lines.svg") no-repeat center/cover;
+  padding: 2.357rem 3.5rem 1.928rem;
+  color: #fff; }
+
 @media screen and (max-width: 1230px) {
   html {
     font-size: 12px; }

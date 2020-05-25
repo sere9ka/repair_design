@@ -1,7 +1,9 @@
 $(document).ready(function () {
   var modal = $('.modal'),
+      modalResp = $('.response__modal')
       modalBtn = $('[data-toggle="modal"]'),
       closeBtn = $('.modal__close'),
+      closeRespBtn = $('.response__close')
       btn = $('#button');
 
       modalBtn.on('click', function () {
@@ -10,6 +12,7 @@ $(document).ready(function () {
       closeBtn.on('click', function () {
         modal.toggleClass('modal--visible');
       });
+      
 
       modal.on('click', function (e){
         var modal = $(".modal");
@@ -93,6 +96,22 @@ $(document).ready(function () {
           required: "Заполните поле",
           email: "Введите корректный Email"
         }
+      },
+      submitHandler: function(form) {
+        $.ajax({
+          type: "POST",
+          url: "send.php",
+          data: $(form).serialize(),
+          success: function (response) {
+            console.log('Ajax сработал. Ответ сервера: ' + response);
+            $(form)[0].reset();
+            modal.removeClass('modal--visible');
+            modalResp.addClass('response__modal--visible');
+          },
+          error: function (response) {
+            console.error('Ошибка запроса ' + response);
+          }
+        });
       }
     });
     //Валидация формы control-section
@@ -118,7 +137,24 @@ $(document).ready(function () {
         },
         checkBox: "Подтвердите согласие",
         userPhone: "Заполните поле"
+      },
+      submitHandler: function(form) {
+        $.ajax({
+          type: "POST",
+          url: "send.php",
+          data: $(form).serialize(),
+          success: function (response) {
+            console.log('Ajax сработал. Ответ сервера: ' + response);
+            $(form)[0].reset();
+            modal.removeClass('modal--visible');
+            modalResp.addClass('response__modal--visible');
+          },
+          error: function (response) {
+            console.error('Ошибка запроса ' + response);
+          }
+        });
       }
+      
     });
     //Валидация формы подвала окна
     $(".footer__form").validate({
@@ -162,6 +198,7 @@ $(document).ready(function () {
             console.log('Ajax сработал. Ответ сервера: ' + response);
             $(form)[0].reset();
             modal.removeClass('modal--visible');
+            modalResp.addClass('modal__response--visible');
           },
           error: function (response) {
             console.error('Ошибка запроса ' + response);
@@ -171,6 +208,12 @@ $(document).ready(function () {
     });
     //маска для телефона
     $('[type=tel]').mask('+7(000)000-00-00', {placeholder: "+7(___)___-__-__"});
+
+    closeRespBtn.on('click', function () {
+      console.log('Нажал кнопку');
+      
+      modalResp.removeClass('response__modal--visible')
+    })
 
     //карты
     ymaps.ready(function () {
