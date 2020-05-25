@@ -279,6 +279,12 @@ img {
 .policy {
   position: relative; }
 
+.footer__policy > .invalid {
+  left: 38%; }
+
+.control__policy > .invalid {
+  left: 38%; }
+
 .button {
   padding: 0.785rem 1.571rem;
   border: none;
