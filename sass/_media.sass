@@ -85,7 +85,9 @@
     font-size: 0.9rem
   .container
     width: 95%
-    margin: auto
+    margin-top: 0
+    margin-bottom: 0
+
   .contacts
     &__phone
       margin-right: 0
@@ -105,16 +107,19 @@
   \\адаптация секции hero
   .hero
     padding-top: 85px
+    height: auto
     &::after
       display: none
     &__buttons
       display: flex
       flex-direction: column
       width: 100%
+      margin-bottom: 4.357rem
     &__button
       &:not(:last-child)
         margin-bottom: 1.9rem
-
+    &-title
+      margin-top: 6rem
     &__buttons > &__button--primary
         margin-right: 0
     &__text
@@ -129,7 +134,7 @@
   \\адаптация секции control
   .control
     background: $dark
-    padding-top: 3.642rem
+    padding-top: 1rem
     padding-bottom: 0rem
     margin: 0
     color: $light

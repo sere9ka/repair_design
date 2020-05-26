@@ -207,7 +207,7 @@ $(document).ready(function () {
       }
     });
     //маска для телефона
-    $('[type=tel]').mask('+7(___)___-__-__');
+    $('[type=tel]').mask('+7(999) 999-99-99', {placeholder: "Введите ваш номер"});
 
     closeRespBtn.on('click', function () {
       console.log('Нажал кнопку');

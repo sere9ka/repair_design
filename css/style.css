@@ -226,52 +226,53 @@ body {
 img {
   max-width: 100%; }
 
-.section--dark {
-  background-color: #131313;
-  color: #fff; }
-
-.section-title {
-  text-align: center; }
-  .section-title--left {
-    text-align: left; }
-  .section-title--light {
+.section {
+  background: #fff url("../img/bkgline.svg") no-repeat center/cover; }
+  .section--dark {
+    background-color: #131313;
     color: #fff; }
-  .section-title__heading {
-    margin-bottom: 1rem;
-    font-family: 'Yeseva One', cursive;
-    font-weight: normal;
-    font-size: 1.428rem;
-    text-transform: uppercase;
-    line-height: 138%; }
-    .section-title__heading--primary {
-      color: #E3B873;
-      font-size: 27px;
-      line-height: 37px;
-      margin-bottom: 2.428rem; }
-  .section-title__word {
-    display: flex;
-    align-items: center; }
-    .section-title__word::after {
-      content: '';
-      width: 90px;
-      height: 1px;
-      margin-left: 2rem;
-      background-color: #E3B873; }
-  .section-title__text {
-    font-size: 1.28rem;
-    line-height: 2.07rem;
-    max-width: 31.57rem;
-    margin-bottom: 42px; }
-  .section-title__image {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    .section-title__image::after, .section-title__image::before {
-      content: '';
-      width: 2.285rem;
-      height: 0.107rem;
-      background-color: #E3B873;
-      margin: 0 10px; }
+  .section-title {
+    text-align: center; }
+    .section-title--left {
+      text-align: left; }
+    .section-title--light {
+      color: #fff; }
+    .section-title__heading {
+      margin-bottom: 1rem;
+      font-family: 'Yeseva One', cursive;
+      font-weight: normal;
+      font-size: 1.428rem;
+      text-transform: uppercase;
+      line-height: 138%; }
+      .section-title__heading--primary {
+        color: #E3B873;
+        font-size: 27px;
+        line-height: 37px;
+        margin-bottom: 2.428rem; }
+    .section-title__word {
+      display: flex;
+      align-items: center; }
+      .section-title__word::after {
+        content: '';
+        width: 90px;
+        height: 1px;
+        margin-left: 2rem;
+        background-color: #E3B873; }
+    .section-title__text {
+      font-size: 1.28rem;
+      line-height: 2.07rem;
+      max-width: 31.57rem;
+      margin-bottom: 42px; }
+    .section-title__image {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .section-title__image::after, .section-title__image::before {
+        content: '';
+        width: 2.285rem;
+        height: 0.107rem;
+        background-color: #E3B873;
+        margin: 0 10px; }
 
 .input-group {
   position: relative; }
@@ -836,8 +837,7 @@ input.invalid {
 
 .customers {
   padding-top: 0;
-  padding-bottom: 25.28rem;
-  background: #fff url("../img/bkgline.svg") no-repeat center/cover; }
+  padding-bottom: 25.28rem; }
   .customers__title__description {
     max-width: 32rem;
     margin-bottom: 5.285rem; }
@@ -1163,7 +1163,8 @@ input.invalid {
     font-size: 0.9rem; }
   .container {
     width: 95%;
-    margin: auto; }
+    margin-top: 0;
+    margin-bottom: 0; }
   .contacts__phone {
     margin-right: 0;
     color: #fff;
@@ -1177,15 +1178,19 @@ input.invalid {
   .button__up {
     bottom: 6rem; }
   .hero {
-    padding-top: 85px; }
+    padding-top: 85px;
+    height: auto; }
     .hero::after {
       display: none; }
     .hero__buttons {
       display: flex;
       flex-direction: column;
-      width: 100%; }
+      width: 100%;
+      margin-bottom: 4.357rem; }
     .hero__button:not(:last-child) {
       margin-bottom: 1.9rem; }
+    .hero-title {
+      margin-top: 6rem; }
     .hero__buttons > .hero__button--primary {
       margin-right: 0; }
     .hero__text {
@@ -1198,7 +1203,7 @@ input.invalid {
     padding: 0.5rem 1rem; }
   .control {
     background: #131313;
-    padding-top: 3.642rem;
+    padding-top: 1rem;
     padding-bottom: 0rem;
     margin: 0;
     color: #fff; }
