@@ -1339,7 +1339,7 @@ input.invalid {
     .control__label {
       font-size: 1.1rem; }
     .control__input {
-      font-size: 1.285rem;
+      font-size: 1.1rem;
       line-height: 138%; }
       .control__input::-moz-placeholder {
         color: #fff; }
@@ -1354,8 +1354,8 @@ input.invalid {
     .control__form {
       position: relative; }
     .control__button {
+      width: 100%;
       order: 1;
-      padding: 1.428rem 6.857rem;
       font-size: 1.1rem;
       margin: auto;
       position: absolute;
@@ -1368,7 +1368,8 @@ input.invalid {
     margin-top: 2rem;
     max-width: 50%; }
   .types {
-    padding-top: 5.92rem; }
+    padding-top: 5.92rem;
+    padding-bottom: 5.375rem; }
   .title__description {
     margin: 1rem auto 2.5rem;
     font-size: 1rem;
@@ -1396,6 +1397,8 @@ input.invalid {
     padding-top: 6.857rem;
     padding-bottom: 0;
     color: #fff; }
+    .team__section-title {
+      margin-bottom: 5.428rem; }
     .team__card__text {
       color: #131313;
       padding-top: 0; }
@@ -1424,7 +1427,7 @@ input.invalid {
       padding: 0;
       padding-bottom: 3.285rem; }
     .footer__input {
-      font-size: 1.285rem; }
+      font-size: 1rem; }
       .footer__input:placeholder {
         font-size: 1.285rem; }
       .footer__input-group {
@@ -1456,9 +1459,10 @@ input.invalid {
     order: 2; }
   .policy__label--center {
     justify-content: start; }
+  .ymap-container {
+    width: 100%;
+    max-height: 18.21rem; }
   #map-yandex {
-    min-height: 18.214rem;
-    height: 3rem;
     margin: auto; } }
 
 @media screen and (max-height: 520px) {

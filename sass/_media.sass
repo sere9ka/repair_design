@@ -160,7 +160,7 @@
     &__label
       font-size: 1.1rem
     &__input
-      font-size: 1.285rem
+      font-size: 1.1rem
       line-height: 138%
       &::placeholder
         color: $light
@@ -169,8 +169,8 @@
     &__form
       position: relative 
     &__button
+      width: 100%
       order: 1
-      padding: 1.428rem 6.857rem
       font-size: 1.1rem
       margin: auto
       position: absolute
@@ -190,6 +190,7 @@
   \\адаптив для секции types
   .types
     padding-top: 5.92rem
+    padding-bottom: 5.375rem
 
   \\описание адаптива для секции design-project
   .title
@@ -230,6 +231,9 @@
     padding-top: 6.857rem
     padding-bottom: 0
     color: $light
+    &__section
+      &-title
+        margin-bottom: 5.428rem
     &__card
       &__text
         color: $dark
@@ -263,7 +267,7 @@
       padding: 0
       padding-bottom: 3.285rem
     &__input
-      font-size: 1.285rem
+      font-size: 1rem
       &:placeholder
         font-size: 1.285rem
       &-group
@@ -299,9 +303,10 @@
       margin-bottom: 
       &--center
         justify-content: start
+  .ymap-container 
+    width: 100%
+    max-height: 18.21rem
   #map-yandex
-    min-height: 18.214rem
-    height: 3rem
     margin: auto
 
 @media screen and ( max-height: 520px )
