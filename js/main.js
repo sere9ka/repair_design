@@ -236,14 +236,7 @@ $(document).ready(function () {
       modalResp.removeClass('response__modal--visible')
     })
 
-    //настройки анимации
-    $(window).scroll(function() {
-      if ($(window).scrollTop() > 800) {
-        sectionControl.addClass('fadeInUp');
-      } else {
-        sectionControl.removeClass('fadeInUp');
-      }
-    });
+   
 
       //Переменная для включения/отключения индикатора загрузки
     var spinner = $('.ymap-container').children('.loader');

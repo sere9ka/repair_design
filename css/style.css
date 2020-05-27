@@ -222,58 +222,58 @@ html {
 
 body {
   font-family: 'Futura Book', sans-serif;
-  font-size: 1rem; }
+  font-size: 1rem;
+  background: #fff url("../img/bkgline.svg") no-repeat center/cover; }
 
 img {
   max-width: 100%; }
 
-.section {
-  background: #fff url("../img/bkgline.svg") no-repeat center/cover; }
-  .section--dark {
-    background-color: #131313;
+.section--dark {
+  background-color: #131313;
+  color: #fff; }
+
+.section-title {
+  text-align: center; }
+  .section-title--left {
+    text-align: left; }
+  .section-title--light {
     color: #fff; }
-  .section-title {
-    text-align: center; }
-    .section-title--left {
-      text-align: left; }
-    .section-title--light {
-      color: #fff; }
-    .section-title__heading {
-      margin-bottom: 1rem;
-      font-family: 'Yeseva One', cursive;
-      font-weight: normal;
-      font-size: 1.428rem;
-      text-transform: uppercase;
-      line-height: 138%; }
-      .section-title__heading--primary {
-        color: #E3B873;
-        font-size: 27px;
-        line-height: 37px;
-        margin-bottom: 2.428rem; }
-    .section-title__word {
-      display: flex;
-      align-items: center; }
-      .section-title__word::after {
-        content: '';
-        width: 90px;
-        height: 1px;
-        margin-left: 2rem;
-        background-color: #E3B873; }
-    .section-title__text {
-      font-size: 1.28rem;
-      line-height: 2.07rem;
-      max-width: 31.57rem;
-      margin-bottom: 42px; }
-    .section-title__image {
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-      .section-title__image::after, .section-title__image::before {
-        content: '';
-        width: 2.285rem;
-        height: 0.107rem;
-        background-color: #E3B873;
-        margin: 0 10px; }
+  .section-title__heading {
+    margin-bottom: 1rem;
+    font-family: 'Yeseva One', cursive;
+    font-weight: normal;
+    font-size: 1.428rem;
+    text-transform: uppercase;
+    line-height: 138%; }
+    .section-title__heading--primary {
+      color: #E3B873;
+      font-size: 27px;
+      line-height: 37px;
+      margin-bottom: 2.428rem; }
+  .section-title__word {
+    display: flex;
+    align-items: center; }
+    .section-title__word::after {
+      content: '';
+      width: 90px;
+      height: 1px;
+      margin-left: 2rem;
+      background-color: #E3B873; }
+  .section-title__text {
+    font-size: 1.28rem;
+    line-height: 2.07rem;
+    max-width: 31.57rem;
+    margin-bottom: 42px; }
+  .section-title__image {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .section-title__image::after, .section-title__image::before {
+      content: '';
+      width: 2.285rem;
+      height: 0.107rem;
+      background-color: #E3B873;
+      margin: 0 10px; }
 
 .input-group {
   position: relative; }
