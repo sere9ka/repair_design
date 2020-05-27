@@ -1449,17 +1449,16 @@ input.invalid {
       .footer__contact__link {
         width: 39px;
         height: 39px; }
-    .footer__map {
-      min-height: 18.214rem;
-      height: 55px;
-      margin: auto;
-      margin-bottom: 2.93rem; }
     .footer__menu {
       display: none; }
   .contact-title {
     order: 2; }
   .policy__label--center {
-    justify-content: start; } }
+    justify-content: start; }
+  #map-yandex {
+    min-height: 18.214rem;
+    height: 3rem;
+    margin: auto; } }
 
 @media screen and (max-height: 520px) {
   .hero__scroll-down {
