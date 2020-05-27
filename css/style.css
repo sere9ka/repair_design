@@ -828,6 +828,11 @@ input.invalid {
     flex-direction: column;
     margin: auto;
     max-width: 19.42rem; }
+    .team__card-img {
+      width: 272px;
+      overflow: hidden; }
+    .team__card__image {
+      width: 305px; }
     .team__card-img1::before {
       content: '';
       background: #E3B873 url("../img/team/team_img-1.svg") no-repeat center/cover;
@@ -1410,6 +1415,8 @@ input.invalid {
       font-size: 1.285rem; }
     .team__card__tag {
       margin-top: 1.714rem; }
+    .team__card-img {
+      width: 305px; }
     .team__text {
       display: none; }
   .customers {
