@@ -1285,7 +1285,7 @@ input.invalid {
   .team__card__text {
     padding-bottom: 0;
     margin: auto;
-    margin-top: -10rem; } }
+    margin-top: -6rem; } }
 
 @media screen and (max-width: 580px) {
   html {
