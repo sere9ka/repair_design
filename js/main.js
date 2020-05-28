@@ -3,9 +3,12 @@ $(document).ready(function () {
       modalResp = $('.response__modal')
       modalBtn = $('[data-toggle="modal"]'),
       closeBtn = $('.modal__close'),
-      closeRespBtn = $('.response__close')
-      btn = $('#button');
-      sectionControl = $('.section-title')
+      closeRespBtn = $('.response__close'),
+      btn = $('#button'),
+      sectionControl = $('.section-title'),
+      buttonDown = $('a[href*="#projects"]'),
+      height = $(window).height();
+      
 
       modalBtn.on('click', function () {
         modal.toggleClass('modal--visible');
@@ -21,7 +24,7 @@ $(document).ready(function () {
         if (!modalDialog.is(e.target) && modalDialog.has(e.target).length === 0){
           modal.toggleClass('modal--visible');
         }
-        });
+      });
 
       $(document).keydown(function(eventObject) {
         if( eventObject.which == 27 ){ 
@@ -40,7 +43,16 @@ $(document).ready(function () {
         e.preventDefault();
         $('html, body').animate({scrollTop:0}, '800');
       });
-    
+      
+      buttonDown.on('click', function(e){
+        var anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $(anchor.attr('href')).offset().top
+        }, 777);
+        e.preventDefault();
+        return false;
+      });
+
       //подключаем слайдер
       var mySwiper = new Swiper('.swiper-container', {
         loop: true,

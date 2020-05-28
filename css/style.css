@@ -1390,6 +1390,9 @@ input.invalid {
       margin: auto;
       position: absolute;
       bottom: -2rem; }
+  .modal__dialog {
+    height: 80%;
+    overflow: scroll; }
   .modal__button {
     padding: 1rem 2rem; }
   .response__button {
