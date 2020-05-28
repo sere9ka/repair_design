@@ -51,8 +51,14 @@
         width: 305px
 
 @media screen and ( max-width: 760px )
-  
-  
+  .control
+    &__form
+      flex-direction: column
+
+    &__input-group
+        flex-basis: 100%
+        margin-bottom: 4.85rem
+
         
   .card
     &__text
@@ -76,6 +82,13 @@
       font-size: 1.075rem
       padding: 0.8rem 2.3rem
       bottom: -1.5rem
+
+  .team
+    &__card
+      &__text
+        padding-bottom: 0
+        margin: auto
+        margin-top: -10rem
   
 
 
@@ -89,6 +102,12 @@
       margin-bottom: 1.22rem
   #checkBox-error
     bottom: 5rem
+  .policy
+    &__label
+      &-modal > 
+        #checkBox-error
+          bottom: -1.2rem
+     
   .logo
     font-size: 0.9rem
   .container
@@ -115,7 +134,6 @@
   \\адаптация секции hero
   .hero
     padding-top: 85px
-    height: auto
     &::after
       display: none
     &__buttons
