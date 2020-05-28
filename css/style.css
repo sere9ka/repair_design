@@ -1262,8 +1262,9 @@ input.invalid {
   .control__form {
     flex-direction: column; }
   .control__input-group {
-    flex-basis: 100%;
-    margin-bottom: 4.85rem; }
+    flex-basis: 100%; }
+    .control__input-group:first-child {
+      margin-bottom: 4.85rem; }
   .card__text {
     max-width: 19.285rem;
     margin-top: -10.85rem;
@@ -1346,7 +1347,7 @@ input.invalid {
     color: #fff; }
     .control__section-title {
       margin-top: 3.642rem;
-      margin-bottom: 2.857rem; }
+      margin-bottom: 2rem; }
       .control__section-title__heading {
         margin-bottom: 1.428rem; }
     .control__video {
@@ -1359,6 +1360,8 @@ input.invalid {
       font-size: 1rem;
       line-height: 169.8%;
       margin-bottom: 1.857rem; }
+      .control__text::before {
+        margin-bottom: 1.5rem; }
     .control__input-group {
       flex-basis: 100%; }
       .control__input-group:first-child {
