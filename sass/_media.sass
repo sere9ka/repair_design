@@ -49,6 +49,9 @@
         margin-right: auto
       &-img
         width: 305px
+  .logo
+    &:hover
+      color: $primary
 
 @media screen and ( max-width: 760px )
   .control
@@ -108,7 +111,8 @@
       &-modal > 
         #checkBox-error
           bottom: -1.2rem
-     
+  .input
+    border-bottom: 1px solid rgba($light,1)   
   .logo
     font-size: 0.9rem
   .container
@@ -193,6 +197,7 @@
     &__input
       font-size: 1.1rem
       line-height: 138%
+      color: $light
       &::placeholder
         color: $light
     &__policy__label
@@ -219,7 +224,10 @@
       margin: auto
       margin-top: 2rem
       max-width: 50%
-
+  .video
+    &__play
+      width: 2.642rem
+      height: 2.642rem
   
   \\адаптив для секции types
   .types

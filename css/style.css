@@ -299,7 +299,7 @@ img {
   font-size: 0.9rem;
   -webkit-animation: sectionAnimation 3s;
   animation: sectionAnimation 3s;
-    animation-cursor: pointer; }
+  cursor: pointer; }
   .button__up {
     position: fixed;
     display: inline-block;
@@ -307,7 +307,10 @@ img {
     right: 0.3rem;
     font-weight: normal;
     opacity: 0;
-    visibility: hidden; }
+    visibility: hidden;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.4); }
+    .button__up:hover {
+      box-shadow: none; }
   .button__show {
     opacity: 1;
     visibility: visible; }
@@ -330,9 +333,11 @@ img {
   .button:focus {
     outline: none; }
 
-.label--light {
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 1.07rem; }
+.label {
+  color: #959595; }
+  .label--light {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.07rem; }
 
 .input {
   background-color: transparent;
@@ -342,6 +347,26 @@ img {
   color: #fff;
   padding: 0.5rem 0;
   outline: none; }
+  .input::-moz-placeholder {
+    color: #131313;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.085rem; }
+  .input:-ms-input-placeholder {
+    color: #131313;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.085rem; }
+  .input::-ms-input-placeholder {
+    color: #131313;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.085rem; }
+  .input::placeholder {
+    color: #131313;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.085rem; }
   .input--light::-moz-placeholder {
     color: #fff;
     font-style: normal;
@@ -452,6 +477,22 @@ input.invalid {
     opacity: .5; }
   to {
     opacity: 1; } }
+
+@-webkit-keyframes size15 {
+  0% {
+    width: 10.1rem;
+    height: 10.1rem; }
+  100% {
+    width: 15rem;
+    height: 15rem; } }
+
+@keyframes size15 {
+  0% {
+    width: 10.1rem;
+    height: 10.1rem; }
+  100% {
+    width: 15rem;
+    height: 15rem; } }
 
 .header {
   position: fixed;
@@ -598,6 +639,8 @@ input.invalid {
     transition: color 0.3s; }
     .instagram__link:hover {
       color: #fff; }
+      .instagram__link:hover::after {
+        background-color: #fff; }
     .instagram__link::after {
       content: '';
       width: 50px;
@@ -667,21 +710,32 @@ input.invalid {
   flex-direction: column;
   flex-basis: 30%; }
 
+.control__input {
+  color: #131313; }
+
 .control__policy {
   flex-basis: 100%;
   margin: auto;
   margin-top: 1.2rem; }
   .control__policy__label {
-    justify-content: center; }
+    justify-content: center;
+    color: #131313; }
 
 .control__button {
   padding: 1.27rem 4.12rem;
-  font-size: 1rem; }
+  font-size: 1rem;
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.4); }
 
 .video__play {
   position: relative;
   margin: auto;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: -webkit-animation 1s;
+  transition: animation 1s;
+  transition: animation 1s, -webkit-animation 1s; }
+  .video__play:hover {
+    -webkit-animation: size15 1s forwards;
+    animation: size15 1s forwards; }
 
 .types {
   padding-top: 10.14rem; }
@@ -1020,7 +1074,10 @@ input.invalid {
       display: block;
       width: 28px;
       height: 28px;
-      border-radius: 50%; }
+      border-radius: 50%;
+      box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2); }
+      .footer__contact__link:hover {
+        box-shadow: none; }
       .footer__contact__link-mail {
         background: #E3B873 url("../img/mail.svg") no-repeat center;
         margin-right: 1.075rem; }
@@ -1065,7 +1122,8 @@ input.invalid {
     background: transparent url("../img/close.svg") no-repeat center;
     border: none;
     margin: 0.857rem;
-    cursor: pointer; }
+    cursor: pointer;
+    outline: none; }
   .modal__title {
     font-family: 'Yeseva One', cursive;
     font-size: 1.357rem;
@@ -1256,7 +1314,9 @@ input.invalid {
       margin-left: auto;
       margin-right: auto; }
     .team__card-img {
-      width: 305px; } }
+      width: 305px; }
+  .logo:hover {
+    color: #E3B873; } }
 
 @media screen and (max-width: 760px) {
   .control__form {
@@ -1298,6 +1358,8 @@ input.invalid {
     bottom: 5rem; }
   .policy__label-modal > #checkBox-error {
     bottom: -1.2rem; }
+  .input {
+    border-bottom: 1px solid white; }
   .logo {
     font-size: 0.9rem; }
   .container {
@@ -1370,7 +1432,8 @@ input.invalid {
       font-size: 1.1rem; }
     .control__input {
       font-size: 1.1rem;
-      line-height: 138%; }
+      line-height: 138%;
+      color: #fff; }
       .control__input::-moz-placeholder {
         color: #fff; }
       .control__input:-ms-input-placeholder {
@@ -1400,6 +1463,9 @@ input.invalid {
     margin: auto;
     margin-top: 2rem;
     max-width: 50%; }
+  .video__play {
+    width: 2.642rem;
+    height: 2.642rem; }
   .types {
     padding-top: 5.92rem;
     padding-bottom: 5.375rem; }

@@ -5,7 +5,7 @@
   text-transform: uppercase
   font-size: 0.9rem
   animation: sectionAnimation 3s
-    cursor: pointer
+  cursor: pointer
   &__up
     position: fixed
     display: inline-block
@@ -14,6 +14,9 @@
     font-weight: normal
     opacity: 0
     visibility: hidden
+    box-shadow: 0px 5px 15px rgba( $primary, 0.4)
+    &:hover
+      box-shadow: none
   &__show
     opacity: 1
     visibility: visible
@@ -40,6 +43,7 @@
     outline: none
 
 .label
+  color: $secondary
   &--light
     color: rgba($light, 0.5)
     font-size: 1.07rem
@@ -52,6 +56,11 @@
   color: $light
   padding: 0.5rem 0
   outline: none
+  &::placeholder
+    color: $dark
+    font-style: normal
+    font-weight: normal
+    font-size: 1.085rem
   &--light
     &::placeholder
       color: $light
@@ -72,6 +81,7 @@
     display: flex
     align-items: center
     font-size: 1.142rem
+ 
     &::before
       content: ''
       width: 18px

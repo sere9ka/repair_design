@@ -4,9 +4,12 @@ $(document).ready(function () {
       modalBtn = $('[data-toggle="modal"]'),
       closeBtn = $('.modal__close'),
       closeRespBtn = $('.response__close'),
-      btn = $('#button'),
+      btnUp = $('#button__up'),
       sectionControl = $('.section-title'),
       buttonDown = $('a[href*="#projects"]'),
+      menuTeam = $('a[href*="#team"]'),
+      menuCustomers = $('a[href*="#customers"]'),
+      menuContacts = $('a[href*="#contacts"]'),
       height = $(window).height();
       
 
@@ -15,6 +18,7 @@ $(document).ready(function () {
       });
       closeBtn.on('click', function () {
         modal.toggleClass('modal--visible');
+        $(".modal__form")[0].reset();
       });
       
 
@@ -34,25 +38,48 @@ $(document).ready(function () {
 
       $(window).scroll(function() {
         if ($(window).scrollTop() > 800) {
-          btn.addClass('button__show');
+          btnUp.addClass('button__show');
         } else {
-          btn.removeClass('button__show');
+          btnUp.removeClass('button__show');
         }
       });
-      btn.on('click', function(e) {
+      btnUp.on('click', function(e) {
         e.preventDefault();
-        $('html, body').animate({scrollTop:0}, '800');
+        $('html, body').animate({scrollTop:0}, 2000);
       });
       
       buttonDown.on('click', function(e){
         var anchor = $(this);
         $('html, body').stop().animate({
             scrollTop: $(anchor.attr('href')).offset().top
-        }, 777);
+        }, 1000);
         e.preventDefault();
         return false;
       });
-
+      menuTeam.on('click', function(e){
+        var anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $(anchor.attr('href')).offset().top
+        }, 1000);
+        e.preventDefault();
+        return false;
+      });
+      menuCustomers.on('click', function(e){
+        var anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $(anchor.attr('href')).offset().top
+        }, 1300);
+        e.preventDefault();
+        return false;
+      });
+      menuContacts.on('click', function(e){
+        var anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $(anchor.attr('href')).offset().top
+        }, 2000);
+        e.preventDefault();
+        return false;
+      });
       //подключаем слайдер
       var mySwiper = new Swiper('.swiper-container', {
         loop: true,
@@ -86,7 +113,10 @@ $(document).ready(function () {
           maxlength: 15
         },
         // строчное правило
-        userPhone: "required",
+        userPhone: {
+          required: true,
+          minlength: 17
+        },
         checkBox: "required",
         // правило-объект
         userEmail: {
@@ -100,7 +130,10 @@ $(document).ready(function () {
           minlength: "Имя не короче двух букв",
           maxlength: "Имя не длиннее 15 букв"
         },
-        userPhone: "Заполните поле",
+        userPhone: {
+          required: "Заполните поле",
+          minlength: "Введите 11 цифр вашего номера"
+        },
         checkBox: "Подтвердите согласие",
         userEmail: {
           required: "Заполните поле",
@@ -143,7 +176,10 @@ $(document).ready(function () {
           maxlength: 15
         },
         // строчное правило
-        userPhone: "required",
+        userPhone: {
+          required: true,
+          minlength: 17
+        },
         checkBox: "required",
       }, //собщения
       messages: {
@@ -153,7 +189,10 @@ $(document).ready(function () {
           maxlength: "Имя не длиннее 15 букв"
         },
         checkBox: "Подтвердите согласие",
-        userPhone: "Заполните поле"
+        userPhone: {
+          required: "Заполните поле",
+          minlength: "Введите 11 цифр вашего номера"
+        },
       },
       submitHandler: function(form) {
         $.ajax({
@@ -192,7 +231,10 @@ $(document).ready(function () {
           maxlength: 15
         },
         // строчное правило
-        userPhone: "required",
+        userPhone: {
+          required: true,
+          minlength: 17
+        },
         checkBox: "required",
         // правило-объект
         userQuestion: {
@@ -206,7 +248,10 @@ $(document).ready(function () {
           minlength: "Имя не короче двух букв",
           maxlength: "Имя не длиннее 15 букв"
         },
-        userPhone: "Заполните поле",
+        userPhone: {
+          required: "Заполните поле",
+          minlength: "Введите 11 цифр вашего номера"
+        },
         checkBox: "Подтвердите согласие",
         userQuestion: {
           required: "Заполните поле",
@@ -239,7 +284,7 @@ $(document).ready(function () {
     });
     
     //маска для телефона
-    $('[type=tel]').mask('+7(999) 999-99-99', {placeholder: "Введите ваш номер"});
+    $('[type=tel]').mask('+7(999) 999-99-99', {placeholder: "Ваш номер телефона"});
 
     //настройка всплывающего окна
     closeRespBtn.on('click', function () {
@@ -249,7 +294,7 @@ $(document).ready(function () {
     })
 
    
-
+    //настройка Яндекс.Карт
       //Переменная для включения/отключения индикатора загрузки
     var spinner = $('.ymap-container').children('.loader');
     //Переменная для определения была ли хоть раз загружена Яндекс.Карта (чтобы избежать повторной загрузки при наведении)
@@ -262,8 +307,11 @@ $(document).ready(function () {
       var myMapTemp = new ymaps.Map("map-yandex", {
         center: [47.238488, 39.720454], // координаты центра на карте
         zoom: 10, // коэффициент приближения карты
-        controls: ['zoomControl', 'fullscreenControl'] // выбираем только те функции, которые необходимы при использовании
+        controls: ['zoomControl', 'fullscreenControl']
+         // выбираем только те функции, которые необходимы при использовании
       });
+      myMapTemp.behaviors
+        .disable('scrollZoom');
       var myPlacemarkTemp = new ymaps.Placemark([47.238488, 39.720454], {
           balloonContent: "Здесь может быть ваш адрес",
       }, {
@@ -370,6 +418,7 @@ $(document).ready(function () {
   
     //Запускаем основную функцию
     ymap();
+    
   
   });
 
@@ -377,7 +426,7 @@ $(document).ready(function () {
   var player;
   $('.video__play').on('click', function onYouTubeIframeAPIReady() {
     player = new YT.Player('player', {
-      height: '465',
+      height: '434',
       width: '100%',
       videoId: 'RHzzLqJWqHs',
       events: {
